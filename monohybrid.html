@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Monohybrid Crosses</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js/monohybrid.js"></script>
+    <div class="mainbox">
+        <h1>Monohybrid Crosses</h1>
+        <p>
+        Monohybrid Crosses is a table that can determine the percentages for the traits of the offspring of two alleles
+        </p>
+
+        <h3>Parent genes</h3>
+        <div style="display: flex; width: 100%; justify-content: center;">
+            <input style="width: 7%;" class="line" id="parent1" maxlength="2" placeholder="Gg"/>
+            <img style="margin: 1%; text-align: center; justify-content: center; filter: brightness(0) invert(1);" src="assets/x.svg">
+            <input style="width: 7%;" class="line" id="parent2" maxlength="2" placeholder="Gg"/>
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: center; margin-top: 5%;">
+            <table class="cross">
+                <tr>
+                    <th class="empty"></th>
+
+                    <th id="top-1"></th>
+                    <th id="top-2"></th>
+                </tr>
+                <tr>
+                    <th id="side-1"></th>
+
+                    <td id="main-1"></td>
+                    <td id="main-2"></td>
+                </tr>
+                <tr>
+                    <th id="side-2"></th>
+
+                    <td id="main-3"></td>
+                    <td id="main-4"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+</html>
